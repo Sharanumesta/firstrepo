@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login1.css">
+    <title>well come...</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form action="prasad.php">
+        <div id="a">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+        </div>
+        <div id="b">
+            <label for="username">Userame</label>
+            <input type="text" id="username">
+        </div>
+        <div id="c">
+            <label for="pass">password</label>
+            <input type="password" id="pass">
+        </div>
+        <div>
+            <input type="submit" value="Submit" onclick="validate()">
+        </div>
+        <div>
+            <input type="Reset" value="Reset">
+        </div>
+    </form>
+    <script>
+        function validate(){
+            alert("Form submitted");
+        }
+    </script>
+</body>
+
+</html>
