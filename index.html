@@ -3,11 +3,12 @@
 <head>
     <title>Resposnsive Registraion Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="action.js"></script>
 </head>
 <body>
     <div class="container">
         <h1 class="form-title">Registraion</h1>
-        <form action="#">
+        <form action="backend.php" name="myForm" onsubmit="return validateForm()" method="post">
            <div class="main-user-info">
             <div class="user-input-box">
                 <label for="fullName">Full name</label>
@@ -39,15 +40,15 @@
             </div>
             <div class="user-input-box">
                 <label for="password">Password</label>
-                <input type="text" 
+                <input type="password" 
                     name="password" 
                     id="password"
                     placeholder="Enter Password"/>
             </div>
             <div class="user-input-box">
                 <label for="confirmpassword">Confirm Password</label>
-                <input type="confirmpassword" 
-                    name="confirmpassword" 
+                <input type="password" 
+                    name="mpassword" 
                     id="confirmpassword"
                     placeholder="Confirm Password"/>
             </div>
